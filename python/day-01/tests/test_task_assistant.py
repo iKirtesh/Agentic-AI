@@ -1,7 +1,15 @@
 """Tests for the Day 1 task assistant and practice exercises."""
 
-from python.day_01.code.exercises import analyze_text, calculate_study_hours, estimate_tokens
-from python.day_01.code.task_assistant import summarize_task
+import sys
+from pathlib import Path
+
+# Add the sibling code directory to the import path. The lesson directory uses
+# the human-readable name "day-01", which is not a valid Python package name.
+CODE_DIR = Path(__file__).resolve().parents[1] / "code"
+sys.path.insert(0, str(CODE_DIR))
+
+from exercises import analyze_text, calculate_study_hours, estimate_tokens
+from task_assistant import summarize_task
 
 
 def test_summarize_task_includes_details() -> None:
