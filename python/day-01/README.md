@@ -43,6 +43,7 @@ The task assistant requests interactive input. Try valid inputs first, then try 
 
 - [notes.md](notes.md) — lesson notes and examples
 - [assignments.md](assignments.md) — independent practice tasks
+- [answers.md](answers.md) — worked solutions and explanations (attempt assignments first)
 - [code/hello.py](code/hello.py) — first Python program
 - [code/task_assistant.py](code/task_assistant.py) — guided mini-project
 - [code/exercises.py](code/exercises.py) — short practice exercises
