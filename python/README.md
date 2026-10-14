@@ -79,3 +79,16 @@ python python/day-02/code/collections_demo.py
 python python/day-02/code/task_manager.py
 python -m pytest python/day-02/tests -q
 ```
+
+
+## Day 3 — Functions and reusable code
+
+Open the [Day 3 lesson](day-03/README.md) for detailed notes, assignments, sample answers, runnable utilities, and unit tests.
+
+Run the examples from the repository root:
+
+```bash
+python python/day-03/code/task_utils.py
+python python/day-03/code/demo.py
+python -m pytest python/day-03/tests -q
+```
