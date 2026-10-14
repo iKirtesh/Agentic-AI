@@ -66,3 +66,16 @@ python -m pytest python/day-01/tests -q
 ## Learning rule
 
 Do not mark a day complete just because you read the notes. Run the code, complete the assignments, explain the key ideas in your own words, and test at least one edge case.
+
+
+## Day 2 — Collections and control flow
+
+Open the [Day 2 lesson](day-02/README.md) for detailed notes, assignments, answers, runnable examples, and tests.
+
+Run the examples from the repository root:
+
+```bash
+python python/day-02/code/collections_demo.py
+python python/day-02/code/task_manager.py
+python -m pytest python/day-02/tests -q
+```
