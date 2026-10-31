@@ -2,6 +2,13 @@
 import os
 from dataclasses import dataclass
 
+from dotenv import load_dotenv
+
+
+# Load local development settings if a .env file exists.
+# Existing environment variables take precedence by default.
+load_dotenv()
+
 
 @dataclass(frozen=True)
 class Settings:
