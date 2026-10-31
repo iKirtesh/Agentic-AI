@@ -105,3 +105,16 @@ python -m pip install -r python/day-04/requirements.txt
 python python/day-04/code/app.py
 python -m pytest python/day-04/tests -q
 ```
+
+
+## Day 5 — OOP, dataclasses, composition, and Pydantic
+
+Open the [Day 5 lesson](day-05/README.md) for detailed notes, assignments, answers, model implementations, and tests.
+
+Run from the repository root:
+
+```bash
+python -m pip install -r python/day-05/requirements.txt
+python python/day-05/code/demo.py
+python -m pytest python/day-05/tests -q
+```
