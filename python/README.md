@@ -118,3 +118,12 @@ python -m pip install -r python/day-05/requirements.txt
 python python/day-05/code/demo.py
 python -m pytest python/day-05/tests -q
 ```
+
+
+## Day 6 — HTTP, REST APIs, HTTPX & Async/Await
+- [Day 6 lesson and setup](day-06/README.md)
+- [Detailed notes](day-06/notes.md)
+- [Assignments](day-06/assignments.md)
+- [Answer guide](day-06/answers.md)
+- [API client implementation](day-06/code/api_client.py)
+- [Tests](day-06/tests/test_api_client.py)
