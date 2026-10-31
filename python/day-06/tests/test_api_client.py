@@ -1,3 +1,5 @@
+import json
+
 import httpx
 import pytest
 
@@ -8,7 +10,8 @@ def json_response(request: httpx.Request) -> httpx.Response:
     if request.url.path == "/posts/404":
         return httpx.Response(404, json={"message": "Not found"})
     if request.method == "POST":
-        return httpx.Response(201, json={"id": 101, **request.read() and {}})
+        payload = json.loads(request.content)
+        return httpx.Response(201, json={"id": 101, **payload})
     if request.url.path == "/posts":
         assert request.url.params["userId"] == "2"
         return httpx.Response(200, json=[{"id": 2, "userId": 2, "title": "Second"}])
@@ -27,6 +30,18 @@ def test_get_posts_passes_query_parameter() -> None:
     with PostsApiClient(transport=transport) as api:
         posts = api.get_posts_by_user(2)
     assert posts[0]["userId"] == 2
+
+
+def test_create_post_sends_json_body() -> None:
+    transport = httpx.MockTransport(json_response)
+    with PostsApiClient(transport=transport) as api:
+        created = api.create_post("Day 6", "HTTPX practice", user_id=3)
+    assert created == {
+        "id": 101,
+        "title": "Day 6",
+        "body": "HTTPX practice",
+        "userId": 3,
+    }
 
 
 def test_http_error_is_not_silently_ignored() -> None:
