@@ -127,3 +127,12 @@ python -m pytest python/day-05/tests -q
 - [Answer guide](day-06/answers.md)
 - [API client implementation](day-06/code/api_client.py)
 - [Tests](day-06/tests/test_api_client.py)
+
+
+## Day 7 — Integration Project & Week 1 Revision
+- [Day 7 project setup](day-07/README.md)
+- [Detailed notes](day-07/notes.md)
+- [Assignments](day-07/assignments.md)
+- [Answer guide](day-07/answers.md)
+- [Task Hub application](day-07/code/app.py)
+- [Automated tests](day-07/tests)
