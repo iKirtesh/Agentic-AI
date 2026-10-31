@@ -92,3 +92,16 @@ python python/day-03/code/task_utils.py
 python python/day-03/code/demo.py
 python -m pytest python/day-03/tests -q
 ```
+
+
+## Day 4 — Exceptions, modules, files, JSON, and environment variables
+
+Open the [Day 4 lesson](day-04/README.md) for notes, assignments, answers, persistent task manager code, and tests.
+
+Run from the repository root:
+
+```bash
+python -m pip install -r python/day-04/requirements.txt
+python python/day-04/code/app.py
+python -m pytest python/day-04/tests -q
+```
