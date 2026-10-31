@@ -136,3 +136,12 @@ python -m pytest python/day-05/tests -q
 - [Answer guide](day-07/answers.md)
 - [Task Hub application](day-07/code/app.py)
 - [Automated tests](day-07/tests)
+
+
+## Day 8 — LLM Fundamentals
+- [Day 8 lesson and setup](day-08/README.md)
+- [Detailed notes](day-08/notes.md)
+- [Assignments](day-08/assignments.md)
+- [Answer guide](day-08/answers.md)
+- [LLM Playground](day-08/code/app.py)
+- [Unit tests](day-08/tests/test_playground.py)
